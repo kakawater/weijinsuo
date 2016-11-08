@@ -1,0 +1,532 @@
+
+/*
+ *bootstrap扩展
+*/
+
+.navbar-kakawater {
+    background-color: #fff;
+    border-color: #f5f5f5;
+    top:0;
+    width: 100%;
+}
+
+.navbar-kakawater .navbar-brand {
+    color: #777;
+    height: 80px;
+}
+
+.navbar-kakawater .navbar-brand:hover,
+.navbar-kakawater .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+
+.navbar-kakawater .navbar-text {
+    color: #777;
+}
+
+.navbar-kakawater .navbar-nav > li > a {
+    color: #777;
+    line-height: 48px;
+    font-size: 14px;
+}
+
+.navbar-kakawater .navbar-nav > li > a:hover,
+.navbar-kakawater .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+    border-bottom: 2px solid #e92322;
+}
+
+.navbar-kakawater .navbar-nav > .active > a,
+.navbar-kakawater .navbar-nav > .active > a:hover,
+.navbar-kakawater .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: transparent;
+    border-bottom: 2px solid #E92322;
+}
+
+.navbar-kakawater .navbar-nav > .disabled > a,
+.navbar-kakawater .navbar-nav > .disabled > a:hover,
+.navbar-kakawater .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+
+.navbar-kakawater .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+.navbar-kakawater .navbar-toggle:hover,
+.navbar-kakawater .navbar-toggle:focus {
+    background-color: #ddd;
+}
+
+.navbar-kakawater .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+.navbar-kakawater .navbar-collapse,
+.navbar-kakawater .navbar-form {
+    border-color: #e7e7e7;
+}
+
+.navbar-kakawater .navbar-nav > .open > a,
+.navbar-kakawater .navbar-nav > .open > a:hover,
+.navbar-kakawater .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+@media (max-width: 767px) {
+    .navbar-kakawater .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-kakawater .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-kakawater .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .navbar-kakawater .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-kakawater .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-kakawater .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .navbar-kakawater .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-kakawater .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-kakawater .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+
+.navbar-kakawater .navbar-link {
+    color: #777;
+}
+
+.navbar-kakawater .navbar-link:hover {
+    color: #333;
+}
+
+.navbar-kakawater .btn-link {
+    color: #777;
+}
+
+.navbar-kakawater .btn-link:hover,
+.navbar-kakawater .btn-link:focus {
+    color: #333;
+}
+
+.navbar-kakawater .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-kakawater .btn-link:hover,
+.navbar-kakawater .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-kakawater .btn-link:focus {
+    color: #ccc;
+}
+
+
+/*公共样式*/
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+@font-face {
+    font-family: kakawater;
+    src: url('../font/MiFie-Web-Font.eot') format("embedded-opentype"),
+         url('../font/MiFie-Web-Font.svg') format("svg"),
+         url('../font/MiFie-Web-Font.ttf') format("truetype"),
+         url('../font/MiFie-Web-Font.woff') format("woff");
+}
+
+[class^="icon-"],[class*=" icon-"]{
+    font-family: kakawater;
+    font-style: normal;
+}
+
+.icon-mobilephone::before {
+    content: "\e908";
+    font-size: 13px;
+}
+
+.icon-telephone::before {
+    content: "\e909";
+    font-size: 15px;
+}
+
+.icon-logo::before {
+    content: "\e93e";
+}
+
+.icon-icon::before {
+    content: "\e920";
+}
+
+
+/*
+ *头部区域
+*/
+
+#header {
+    /*height: 200px;*/
+}
+
+#header > .topBar {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#header > .topBar > .container {
+    height: 40px;
+}
+
+#header > .topBar > .container .col-md-4{
+    background-color: #2aabd2;
+}
+
+#header > .topBar > .container .col-md-8 {
+    background-color: #2b542c;
+}
+
+#header > .topBar >.container .row > div {
+    height: 40px;
+    font-size: 12px;
+    color: #888;
+}
+
+#header > .topBar >.container .row > div + div {
+    border-left: 1px solid #c0c0c0;
+}
+
+
+#header > .topBar >.container .row > div a {
+    font-size: 12px;
+    color: #888;
+}
+
+#header .mobile-link {
+
+    position: relative;
+}
+
+#header .mobile-link:hover {
+    text-decoration: none;
+}
+
+#header .mobile-link >img {
+    display: none;
+    position: absolute;
+}
+
+#header .mobile-link:hover >img {
+    display: inline-block;
+    top: 100%;
+    left: 0;
+    z-index: 1001;
+}
+
+.icon-icon:before {
+    content: "\e920";
+    color: #E92322;
+    font-size: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.icon-logo:after {
+    content: '\e93e';
+    color: #333;
+    font-size: 32px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+#ad-center > .carousel-inner > .item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#ad-center > .carousel-inner > .item > img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #ad-center > .carousel-inner > .item {
+        height: 410px;
+    }
+}
+
+/*
+ *特色介绍
+ */
+
+
+#feature-introduce {
+    padding: 50px 0;
+}
+
+.icon-uniE907:before {
+    content: "\e907";
+}
+
+#feature-introduce {
+    padding: 50px 0;;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#feature-introduce a {
+    text-decoration: none;
+}
+
+#feature-introduce i {
+    font-size: 34px;
+}
+
+#feature-introduce .row >div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*
+ *立即预约
+ */
+
+#appointment {
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#appointment  > .container > p{
+    line-height: 60px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+#appointment  > .container > p > span{
+    color: #E92322;
+}
+
+#appointment  > .container > p > a {
+    color: #E92322;
+    border-bottom: 1px dashed #E92322;
+    text-decoration: none;
+}
+
+
+
+.icon-uniE905:before {
+    content: "\e905";
+}
+
+.icon-uniE906:before {
+    content: "\e906";
+}
+
+/*
+ *产品推荐
+ */
+
+#products {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+}
+
+#products > .container .nav-tabs {
+    padding-left: 20px;
+}
+
+#products > .container .nav-tabs > li > a{
+    font-size: 16px;
+    color: #333;
+}
+
+
+#products > .container .nav-tabs > li.active > a{
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 4px solid #E92322;
+}
+
+/*
+ *新闻板块
+*/
+
+#news-section {
+    padding: 50px 0;
+    border-bottom: 1px  solid #c0c0c0;
+}
+
+#news-section .news-title {
+    padding: 15px 0;
+    border-bottom: 1px dashed #c0c0c0;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    margin-right: 10px;
+}
+
+#news-section .news-title::after {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border:1px solid #c0c0c0;
+    position: absolute;
+    bottom: -5px;
+    right: -10px;
+}
+
+@media (max-width: 768px) {
+    #news-section .nav-pills li {
+        display: inline-block;
+    }
+
+    #news-section {
+        text-align: center;
+    }
+}
+
+#news-section .tab-content {
+    font-size: 40px;
+}
+
+#news-section .nav-pills a{
+    font-size: 0;
+}
+
+.icon-news01:before {
+    content: "\e90e";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+.icon-news02:before {
+    content: "\e90f";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+.icon-news03:before {
+    content: "\e910";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+.icon-news04:before {
+    content: "\e911";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+#partner-section {
+    padding: 30px 0;
+}
+
+#partner-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+#partner-list .partner-item {
+    display: inline-block;
+    font-size: 50px;
+}
+#partner-list .partner-item a{
+    padding: 10px 20px;
+}
+
+#partner-list .partner-item a:hover{
+    text-decoration: none;
+}
+
+#partner-list .partner-item + .partner-item {
+    border-left: 1px dashed #e0e0e0;
+}
+.icon-uniE930:hover {
+    color: #df3232;
+}
+
+.icon-uniE930:before {
+    content: "\e946";
+}
+
+.icon-uniE92F:hover {
+    color: #e8380d;
+}
+
+.icon-uniE92F:before {
+    content: "\e92f";
+}
+
+.icon-uniE92E:hover {
+    color: #ed6f00;
+}
+
+.icon-uniE92E:before {
+    content: "\e92e";
+}
+
+.icon-uniE92A:hover {
+    color: #159f69;
+}
+
+.icon-uniE92A:before {
+    content: "\e92a";
+}
+
+.icon-uniE929:hover {
+    color: #07569e;
+}
+
+.icon-uniE929:before {
+    content: "\e929";
+}
+
+.icon-uniE931:hover {
+    color: #004098;
+}
+
+.icon-uniE931:before {
+    content: "\e931";
+}
+
+.icon-uniE92C:hover {
+    color: #d32019;
+}
+
+.icon-uniE92C:before {
+    content: "\e92c";
+}
+
+.icon-uniE92B:hover {
+    color: #3eac4a;
+}
+
+.icon-uniE92B:before {
+    content: "\e92b";
+}
+
+.icon-uniE92D:hover {
+    color: #2bb289;
+}
+
+.icon-uniE92D:before {
+    content: "\e92d";
+}
+
+
+/*
+ *脚注区域
+*/
+
+#footer {
+    height: 200px;
+    background-color: #f0f0f0;
+}

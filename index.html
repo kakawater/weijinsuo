@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <!--上述3个meta标签必须放在最前面，任何其它内容都必须跟在其后面!-->
+    <title>微金所</title>
+    <!-- 引入Bootstrap样式表-->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <!--载入我们自己的样式表-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <!--头部区域-->
+    <header id="header">
+        <div class="topBar visible-lg visible-md ">
+        <!--<div class="topBar hidden-sm hidden-xs">-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <a href="#" class="mobile-link">
+                            <i class="icon-mobilephone text-center"></i>
+                            <span>手机微金所</span>
+                            <i class="glyphicon glyphicon-chevron-down"></i>
+                            <img src="img/c_06.jpg" alt="扫一扫">
+                        </a>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <i class="icon-telephone"></i>
+                        <span>4006-89-4006(服务时间:9:00-21:00)</span>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <a href="#">常见问题</a>
+                        <a href="#">财富登陆</a>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="#">
+                            <button type="button" class="btn btn-danger btn-sm">免费注册</button>
+                        </a>
+                        <a href="#" class="btn btn-link-btn-sm" data-toggle="modal" data-target="#login_dialog">登陆</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-kakawater navbar-static-top" role="navigation" data-spy="affix" data-offset-top="40" data-offset-bottom="200">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navi_list">
+                        <span class="sr-only">切换菜单</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <i class="icon-icon icon-logo"></i>
+                    </a>
+                </div>
+
+                <!--汉堡菜单-->
+                <div class="collapse navbar-collapse" id="navi_list">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">我要投资</a></li>
+                        <li><a href="#">我要借款</a></li>
+                        <li><a href="#">平台介绍</a></li>
+                        <li><a href="#">新手专区</a></li>
+                        <li><a href="#">最新动态</a></li>
+                        <li><a href="#">微论坛</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right hidden-sm">
+                        <li><a href="#">个人中心</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--/头部区域-->
+    <!--广告轮播-->
+    <section id="ad-center" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#ad-center" data-slide-to="0" class="active"></li>
+                <li data-target="#ad-center" data-slide-to="1"></li>
+                <li data-target="#ad-center" data-slide-to="2"></li>
+                <li data-target="#ad-center" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active" data-image-lg="img/slide_01_2000x410.jpg"  data-image-xs="img/slide_01_640x340.jpg">
+                    <!--<img src="" alt="红包雨">-->
+                    <!--<div class="carousel-caption">-->
+                        <!--红包雨-->
+                    <!--</div>-->
+                </div>
+                <div class="item" data-image-lg="img/slide_02_2000x410.jpg"  data-image-xs="img/slide_02_640x340.jpg">
+                    <!--<img src="img/slide_02_2000x410.jpg" alt="小人物大梦想">-->
+                    <!--<div class="carousel-caption">-->
+                        <!--小人物大梦想-->
+                    <!--</div>-->
+                </div>
+                <div class="item" data-image-lg="img/slide_03_2000x410.jpg"  data-image-xs="img/slide_03_640x340.jpg">
+                    <!--<img src="img/slide_03_2000x410.jpg" alt="互联网金融亮相京城">-->
+                    <!--<div class="carousel-caption">-->
+                        <!--互联网金融亮相京城-->
+                    <!--</div>-->
+                </div>
+                <div class="item" data-image-lg="img/slide_04_2000x410.jpg"  data-image-xs="img/slide_04_640x340.jpg">
+                    <!--<img src="img/slide_03_2000x410.jpg" alt="互联网金融亮相京城">-->
+                    <!--<div class="carousel-caption">-->
+                    <!--互联网金融亮相京城-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#ad-center" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">上一个</span>
+            </a>
+            <a class="right carousel-control" href="#ad-center" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">下一个</span>
+            </a>
+    </section>
+    <!--/广告轮播-->
+    <!--特色介绍-->
+    <section id="feature-introduce">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <a href="#">
+                        <div class="media">
+                            <div class="media-left">
+                            <!--<img src="" alt="">-->
+                                <i class="icon-uniE907"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">支付保障交易</h4>
+                                <p>银联支付全程保障支付安全</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <a href="#">
+                        <div class="media">
+                            <div class="media-left" >
+                                <!--<img src="" alt="">-->
+                                <i class="icon-uniE907"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">平台财产安全</h4>
+                                <p>由PICC保驾护航</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <a href="#">
+                        <div class="media">
+                            <div class="media-left">
+                                <!--<img src="" alt="">-->
+                                <i class="icon-uniE907"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">交易安全</h4>
+                                <p>由中国人寿财险对借款人承保</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <a href="#">
+                        <div class="media">
+                            <div class="media-left">
+                                <!--<img src="" alt="">-->
+                                <i class="icon-uniE907"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">安全保障</h4>
+                                <p>独创八层安全保障机制</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <a href="#">
+                        <div class="media">
+                            <div class="media-left">
+                                <!--<img src="" alt="">-->
+                                <i class="icon-uniE907"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">筛选优质资产</h4>
+                                <p>对接上海资信征信系统</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <a href="#">
+                        <div class="media">
+                            <div class="media-left">
+                                <!--<img src="" alt="">-->
+                                <i class="icon-uniE907"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">联合信息发布</h4>
+                                <p>通过路透社共同发布利率指数报告</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/特色介绍-->
+    <!--立即预约-->
+    <section id="appointment">
+        <div class="container">
+            <p class="pull-left"><i class="icon-uniE906"></i>现在有<span>458</span>人在排队，累计预约交易成功<span>7409</span>次。什么是预约投标? <a href="#">立即预约</a></p>
+            <p class="pull-right hidden-xs hidden-sm"><i class="icon-uniE905"></i>微金所宣传片</p>
+        </div>
+        <section id="products">
+            <div class="container">
+                <div class="nav-tab-wrap">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs " role="tablist">
+                        <li role="presentation" class="active"><a href="#products-recommend" role="tab" data-toggle="tab">特别推荐</a></li>
+                        <li role="presentation"><a href="#products-invest" role="tab" data-toggle="tab">微投资</a></li>
+                        <li role="presentation"><a href="#products-treasure" role="tab" data-toggle="tab">微小宝</a></li>
+                        <li role="presentation"><a href="#products-consume" role="tab" data-toggle="tab">微消费</a></li>
+                        <li role="presentation"><a href="#products-money" role="tab" data-toggle="tab">微金宝</a></li>
+                        <li role="presentation"><a href="#products-transfer" role="tab" data-toggle="tab">微转让</a></li>
+                    </ul>
+                </div>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="products-recommend">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Panel title</h3>
+                            </div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="products-invest">微投资</div>
+                    <div role="tabpanel" class="tab-pane fade" id="products-treasure">微小宝</div>
+                    <div role="tabpanel" class="tab-pane fade" id="products-consume">微消费</div>
+                    <div role="tabpanel" class="tab-pane fade" id="products-money">微金宝</div>
+                    <div role="tabpanel" class="tab-pane fade" id="products-transfer">微转让</div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!--/立即预约-->
+    <!--产品推荐-->
+    <!--/产品推荐-->
+    <!--新闻列表-->
+    <section id="news-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-3">
+                    <div class="news-title">
+                        全部新闻
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation" class="active"><a href="#news-item-01" data-toggle="tab" data-title="静夜思"><i class="icon-news01"></i></a></li>
+                        <li role="presentation"><a href="#news-item-02" data-toggle="tab" data-title="夜宿山寺"><i class="icon-news02"></i></a></li>
+                        <li role="presentation"><a href="#news-item-03" data-toggle="tab" data-title="望庐山瀑布"><i class="icon-news03"></i></a></li>
+                        <li role="presentation"><a href="#news-item-04" data-toggle="tab" data-title="黄鹤楼送孟浩然之广陵"><i class="icon-news04"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active in  fade" id="news-item-01">
+                            床前明月光<br>
+                            疑似地上霜<br>
+                            举头望明月<br>
+                            低头思故乡<br>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="news-item-02">
+                            危楼高百尺<br>
+                            手可摘星辰<br>
+                            不敢高声语<br>
+                            恐惊天上人<br>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="news-item-03">
+                            日照香炉生紫烟<br>
+                            要看瀑布挂前川<br>
+                            飞流直下三千尺<br>
+                            疑是银河落九天<br>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="news-item-04">
+                            古人西辞黄鹤楼<br>
+                            烟花三月下扬州<br>
+                            孤帆远影碧空尽<br>
+                            唯见长江天际流<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/新闻列表-->
+    <!--合作伙伴-->
+    <section id="partner-section">
+        <div class="container text-center">
+            <h3>合作伙伴</h3>
+            <ul id="partner-list">
+                <li class="partner-item"><a href="#"><i class="icon-uniE930"></i></a></li>
+                <li class="partner-item"><a href="#"><i class="icon-uniE92F"></i></a></li>
+                <li class="partner-item"><a href="#"><i class="icon-uniE92E"></i></a></li>
+                <li class="partner-item"><a href="#"><i class="icon-uniE92A"></i></a></li>
+                <li class="partner-item"><a href="#"><i class="icon-uniE929"></i></a></li>
+                <li class="partner-item"><a href="#"><i class="icon-uniE931"></i></a></li>
+                <li class="partner-item"><a href="#"><i class="icon-uniE92C"></i></a></li>
+                <li class="partner-item"><a href="#"><i class="icon-uniE92B"></i></a></li>
+                <li class="partner-item"><a href="#"><i class="icon-uniE92D"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <!--/合作伙伴-->
+    <!--脚注区域-->
+    <footer id="footer"></footer>
+    <!--/脚注区域-->
+    <!--模态框-->
+    <div class="modal fade" id="login_dialog" tabindex="-1" role="dialog" aria-labelledby="login_dialog_title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="login_dialog_title">登陆</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        正文内容
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/模态框-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="lib/jquery/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

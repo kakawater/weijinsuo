@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3Target实现Tab栏切换</title>
+    <style type="text/css">
+        .tabmenu {
+        }
+        .tabmenu li{
+            display:inline-block;
+        }
+        .tabmenu li a {
+            display:block;
+            padding:5px 10px;
+            margin:0 10px 0 0;border:1px solid #91a7b4;
+            border-radius:0 0 5px 5px;
+            background:#e3f1f8;
+            color:#333;
+            text-decoration:none;
+        }
+        .tab_content {
+            position: absolute;
+            width:600px;height:170px;padding:15px;border:1px solid #91a7b4;border-radius:3px;box-shadow:0 2px 3px rgba(0,0,0,0.1);font-size:1.2em;line-height:1.5em;color:#666;background:#fff;
+        }
+        #tab1:target, #tab2:target, #tab3:target {
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+
+<div class="tablist">
+    <ul class="tabmenu">
+        <li><a href="#tab1">标签一</a></li>
+        <li><a href="#tab2">标签二</a></li>
+        <li><a href="#tab3">标签三</a></li>
+    </ul>
+    <div id="tab1" class="tab_content">tab1 content</div>
+    <div id="tab2" class="tab_content">tab2 content</div>
+    <div id="tab3" class="tab_content">tab3 content</div>
+</div>
+
+</body>
+</html>
